@@ -1,0 +1,15 @@
+if [ -f /etc/bashrc ]; then
+    . /etc/bashrc
+fi
+if [ -f ~/.bash_functions ]; then
+    . ~/.bash_functions
+fi
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+export HISTTIMEFORMAT='%Y-%m-%d_%H:%M:%S_%a  '
+shopt -s histappend
+
+PATH=$PATH:/opt/puppetlabs/bin/:/usr/local:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/csw/bin:/opt/csw/sbin
+export PATH
