@@ -1,0 +1,4 @@
+# For a certificate signing request
+openssl req -text -noout -in $DOMAIN.csr.pem
+# For a generated certificate
+openssl x509 -in $DOMAIN.crt.pem -noout -text
